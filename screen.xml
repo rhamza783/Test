@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/drawer_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<de.sfr.calctape.keyboard.KeyboardAwareLayout android:orientation="vertical" android:id="@id/keyboardAwareEditor" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<include layout="@layout/toolbar_top" />
+		<FrameLayout android:id="@id/scrollFrameWrapper" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+			<ScrollView android:scrollbarSize="5.0dip" android:scrollbarThumbVertical="@drawable/editor_scrollbar_thumb" android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="insideOverlay" android:id="@id/CalcTapeEditorScrollView" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:fadeScrollbars="false">
+				<HorizontalScrollView android:id="@id/CalcTapeEditorHScrollView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+					<FrameLayout android:id="@id/editorFrameWrapper" android:layout_width="wrap_content" android:layout_height="fill_parent">
+						<de.sfr.calctape.editor.Editor android:gravity="top" android:id="@id/CalcTapeEditor" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollHorizontally="false" android:fillViewport="true" android:inputType="textMultiLine" android:textIsSelectable="true" android:textCursorDrawable="@drawable/calctape_cursor" />
+					</FrameLayout>
+				</HorizontalScrollView>
+			</ScrollView>
+		</FrameLayout>
+		<include android:id="@id/toolbar1" layout="@layout/toolbar_bottom" />
+		<include android:id="@id/toolbar3" layout="@layout/toolbar_kb_edit" />
+		<FrameLayout android:id="@id/keyboardFrame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+	</de.sfr.calctape.keyboard.KeyboardAwareLayout>
+	<include android:layout_gravity="start" android:layout_width="@dimen/filemanager_drawer_size" android:layout_height="fill_parent" layout="@layout/filemenu" />
+</androidx.drawerlayout.widget.DrawerLayout>

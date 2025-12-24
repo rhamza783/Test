@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@id/tabbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="5.0dip">
+	<Button android:textSize="20.0sp" android:textColor="@color/button_state_color" android:layout_gravity="right" android:id="@id/btnSave" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/button_save" android:layout_alignParentRight="true" android:textAllCaps="false" android:layout_alignParentEnd="true" />
+</androidx.appcompat.widget.Toolbar>

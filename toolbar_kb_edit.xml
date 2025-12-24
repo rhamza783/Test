@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<de.sfr.calctape.keyboard.CalcTapeToolbar xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="bottom" android:orientation="vertical" android:background="?toolbar_background" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height">
+	<View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+	<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<TextView android:gravity="center" android:id="@id/btnTapToEditIcon" android:paddingLeft="8.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" style="@style/ToolbarSymbolButtonStyle" />
+		<TextView android:textStyle="italic" android:gravity="center|left" android:id="@id/lblTapToEdit" android:paddingLeft="4.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/tap_key_to_edit" style="@style/ToolbarButtonStyle" />
+		<Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+		<TextView android:gravity="center|right" android:id="@id/btnEditDone" android:paddingLeft="16.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/done" style="@style/ToolbarButtonStyle" />
+		<TextView android:gravity="center" android:id="@id/btnEditDoneIcon" android:paddingLeft="4.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" style="@style/ToolbarSymbolButtonStyle" />
+	</LinearLayout>
+</de.sfr.calctape.keyboard.CalcTapeToolbar>

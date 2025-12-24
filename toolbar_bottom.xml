@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<de.sfr.calctape.keyboard.CalcTapeToolbar xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="bottom" android:orientation="vertical" android:background="?toolbar_background" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height">
+	<View android:background="?colorControlNormal" android:layout_width="fill_parent" android:layout_height="1.0px" />
+	<LinearLayout android:orientation="horizontal" android:background="?toolbar_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<Button android:id="@id/btnNumericKeyboard" android:text="K1" style="@style/ToolbarButtonStyle" />
+		<Button android:id="@id/btnUserKeyboard" android:text="K2" style="@style/ToolbarButtonStyle" />
+		<Button android:id="@id/btnTextNavKeyboard" android:text="Nav" style="@style/ToolbarButtonStyle" />
+		<Button android:id="@id/btnSystemKeyboard" android:text="ABC" style="@style/ToolbarButtonStyle" />
+		<Button android:id="@id/btnKeyboardArrow" android:text="" style="@style/ToolbarSymbolButtonStyle" />
+		<LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/copySection" android:layout_width="wrap_content" android:layout_height="fill_parent">
+			<de.sfr.calctape.ResultSummaryView android:textSize="20.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="?result_summary_text_color" android:gravity="end|center" android:layout_gravity="center_vertical" android:id="@id/lblCalcResult" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginEnd="10.0dip" />
+			<Button android:id="@id/btnCopy" android:text="" style="@style/ToolbarSymbolButtonStyle" />
+		</LinearLayout>
+	</LinearLayout>
+</de.sfr.calctape.keyboard.CalcTapeToolbar>
