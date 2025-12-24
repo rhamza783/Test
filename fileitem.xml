@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<de.sfr.calctape.filemanager.FileItem xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@id/file_item_view" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@null" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_alignParentLeft="true">
+		<TextView android:textStyle="bold" android:id="@id/filename" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Filename" android:fontFamily="@font/calctape_standard" />
+		<TextView android:id="@id/lastModified" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Date" />
+	</LinearLayout>
+	<TextView android:textSize="@dimen/icon_symbol_size" android:textStyle="bold" android:textColor="@color/icon_text_day_night" android:id="@id/scratchPadIcon" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dip" android:text="" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:fontFamily="@font/calctape_symbol" />
+</de.sfr.calctape.filemanager.FileItem>

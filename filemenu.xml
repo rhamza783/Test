@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@id/filemenu" android:fitsSystemWindows="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<TextView android:textSize="@dimen/icon_text_size" android:textStyle="bold" android:id="@id/headerTitle" android:layout_width="wrap_content" android:layout_height="@dimen/abc_action_bar_default_height_material" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="-16.0dip" android:text="@string/documents" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+	<Button android:textSize="@dimen/icon_symbol_size" android:textStyle="bold" android:textColor="@color/icon_text_day_night" android:id="@id/newCalc" android:clickable="true" android:layout_width="56.0dip" android:layout_height="48.0dip" android:layout_marginTop="4.0dip" android:text="" android:layout_alignParentRight="true" android:fontFamily="@font/calctape_symbol" />
+	<View android:layout_below="@id/headerTitle" style="@style/Divider" />
+	<de.sfr.calctape.filemanager.FileManagerList android:scrollbarThumbVertical="@drawable/file_manager_list_scrollbar" android:layout_gravity="start" android:id="@id/fileList" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/FileChooserB" android:layout_below="@id/headerTitle" android:fadeScrollbars="false" />
+	<View android:layout_above="@id/FileChooserB" style="@style/Divider" />
+	<de.sfr.calctape.element.MenuItem android:id="@id/FileChooserB" android:text="@string/choose_file" android:layout_above="@id/SaveFileChooserB" android:drawableStart="@drawable/symbol_import" style="@style/MenuItemPadding" />
+	<de.sfr.calctape.element.MenuItem android:id="@id/SaveFileChooserB" android:text="@string/choose_save_file" android:layout_above="@id/Backup" android:drawableStart="@drawable/symbol_export" style="@style/MenuItemPadding" />
+	<View android:visibility="gone" android:layout_above="@id/Backup" style="@style/Divider" />
+	<de.sfr.calctape.element.MenuItem android:id="@id/Backup" android:visibility="gone" android:text="Backup" android:layout_above="@id/Restore" android:drawableStart="@drawable/symbol_backup" style="@style/MenuItemPadding" />
+	<de.sfr.calctape.element.MenuItem android:id="@id/Restore" android:visibility="gone" android:text="Restore" android:layout_above="@id/SettingsN" android:drawableStart="@drawable/symbol_restore" style="@style/MenuItemPadding" />
+	<View android:layout_above="@id/SettingsN" style="@style/Divider" />
+	<de.sfr.calctape.element.MenuItem android:id="@id/SettingsN" android:text="@string/settings" android:layout_above="@id/info" android:drawableStart="@drawable/symbol_settings" style="@style/MenuItemPadding" />
+	<de.sfr.calctape.element.MenuItem android:id="@id/info" android:text="@string/info" android:layout_alignParentBottom="true" android:drawableStart="@drawable/symbol_info" style="@style/MenuItemPadding" />
+</RelativeLayout>

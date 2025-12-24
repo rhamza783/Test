@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<de.sfr.calctape.keyboard.KeyboardRenderer xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@id/keyboardView" android:background="?keyboard_background" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">" > "	<include android:id="@id/toolbar2" layout="@layout/toolbar_bottom" />
+	<de.sfr.calctape.keyboard.Keyboard android:id="@id/Keyboard" android:background="@color/greyDark" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</de.sfr.calctape.keyboard.KeyboardRenderer>
